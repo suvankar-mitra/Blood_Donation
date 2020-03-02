@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">LIFE</string>
+    <string name="welcome">Welcome Back</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="blood_types">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="gender_types">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="hospital_list">
+        <item></item>
+        <item>Ramakrishna Smart Hospitals</item>
+        <item>Narayana Multispeciality Clinic</item>
+        <item>Apollo Clinic</item>
+    </string-array>
+    <string-array name="state_list">
+        <item></item>
+        <item>Karnataka</item>
+        <item>Tamilnadu</item>
+        <item>Kerala</item>
+    </string-array>
+    <string-array name="locality_list">
+        <item></item>
+        <item>Electronic City</item>
+        <item>BTM</item>
+    </string-array>
+</resources>

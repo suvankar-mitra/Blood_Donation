@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:clickable="true"
+    tools:context=".fragments.DiagnosticReportFragment">
+
+    <ImageButton
+        android:id="@+id/diag_report_back"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Your Report"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/divider7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Report Id"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="391dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/diag_report_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="***"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lab Name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/diag_report_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="***"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_id"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Patient Name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/diag_report_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="***"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_lab"
+        app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Physician"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/diag_report_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="***"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_patient"
+        app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Report date"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/diag_report_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="***"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_doctor"
+        app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="White Blood Cell (WBC)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/diag_report_wbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:text="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView38"
+        app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Red Blood Cell (RBC) "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/diag_report_rbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_wbc"
+        app:layout_constraintTop_toTopOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="K/mcL"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_wbc"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_wbc" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="M/mcL"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_rbc"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_rbc" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hemoglobin (HB/Hgb))"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hematocrit (HCT)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mean Cell Volume (MCV)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView47"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mean Cell Hb (MCH)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView48"
+        app:layout_constraintTop_toBottomOf="@+id/textView48"
+        tools:text="Mean Cell Hb Conc (MCHC)" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Red Cell Dist Width (RDW)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mean Cell Hemoglobin (MCH)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/diag_report_hgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_rbc"
+        app:layout_constraintTop_toTopOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="g/dL"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_hgb"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_hgb" />
+
+    <TextView
+        android:id="@+id/diag_report_hct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_hgb"
+        app:layout_constraintTop_toTopOf="@+id/textView47" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="%"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_hct"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_hct" />
+
+    <TextView
+        android:id="@+id/diag_report_mcv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_hct"
+        app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="fL"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_mcv"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_mcv" />
+
+    <TextView
+        android:id="@+id/diag_report_mchc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_mcv"
+        app:layout_constraintTop_toTopOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="g/dL"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_mchc"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_mchc" />
+
+    <TextView
+        android:id="@+id/diag_report_rdw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_mchc"
+        app:layout_constraintTop_toTopOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="%"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_rdw"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_rdw" />
+
+    <TextView
+        android:id="@+id/diag_report_mch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_rdw"
+        app:layout_constraintTop_toTopOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="pg"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_mch"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_mch" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Platelet count"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView51"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/diag_report_platelet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diag_report_mch"
+        app:layout_constraintTop_toTopOf="@+id/textView64" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="K/mcL"
+        app:layout_constraintStart_toEndOf="@+id/diag_report_platelet"
+        app:layout_constraintTop_toTopOf="@+id/diag_report_platelet" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="*** End of Report ***"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+</androidx.constraintlayout.widget.ConstraintLayout>

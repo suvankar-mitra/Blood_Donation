@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="#19D5D5D5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/donate_notif_blood_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="B+"
+        android:textColor="#DB5860"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/donate_notif_hospital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/donate_notif_hospital" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/donate_notif_patient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/donate_notif_unit"
+        app:layout_constraintStart_toStartOf="@+id/donate_notif_date"
+        app:layout_constraintTop_toBottomOf="@+id/donate_notif_hospital" />
+
+    <TextView
+        android:id="@+id/donate_notif_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="02/07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/donate_notif_hospital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hospital"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/donate_notif_date"
+        app:layout_constraintEnd_toStartOf="@+id/donate_notif_blood_type"
+        app:layout_constraintStart_toEndOf="@+id/donate_notif_date"
+        app:layout_constraintTop_toTopOf="@+id/donate_notif_date" />
+
+    <TextView
+        android:id="@+id/donate_notif_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2 Units"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/donate_notif_blood_type"
+        app:layout_constraintTop_toBottomOf="@+id/donate_notif_hospital" />
+
+    <TextView
+        android:id="@+id/donate_notif_purpose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:maxLines="4"
+        android:minLines="1"
+        android:text="Purpose"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/donate_notif_donate_btn"
+        app:layout_constraintEnd_toEndOf="@+id/donate_notif_unit"
+        app:layout_constraintStart_toStartOf="@+id/donate_notif_patient"
+        app:layout_constraintTop_toBottomOf="@+id/donate_notif_patient" />
+
+    <TextView
+        android:id="@+id/donate_notif_requested_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="Requested by"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/donate_notif_time"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/donate_notif_donate_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="donate"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="@+id/donate_notif_purpose" />
+
+    <TextView
+        android:id="@+id/donate_notif_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/31/9999"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/donate_notif_donate_btn"
+        app:layout_constraintStart_toStartOf="@+id/donate_notif_requested_by" />
+</androidx.constraintlayout.widget.ConstraintLayout>

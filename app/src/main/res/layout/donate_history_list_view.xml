@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="#19D5D5D5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/don_hist_blood_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="B+"
+        android:textColor="#DB5860"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/don_hist_hospital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/don_hist_hospital" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/don_hist_patient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/don_hist_unit"
+        app:layout_constraintStart_toStartOf="@+id/don_hist_date"
+        app:layout_constraintTop_toBottomOf="@+id/don_hist_hospital" />
+
+    <TextView
+        android:id="@+id/don_hist_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="02/07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/don_hist_hospital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hospital"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/don_hist_date"
+        app:layout_constraintEnd_toStartOf="@+id/don_hist_blood_type"
+        app:layout_constraintStart_toEndOf="@+id/don_hist_date"
+        app:layout_constraintTop_toTopOf="@+id/don_hist_date" />
+
+    <TextView
+        android:id="@+id/don_hist_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2 Units"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/don_hist_blood_type"
+        app:layout_constraintTop_toBottomOf="@+id/don_hist_hospital" />
+
+    <TextView
+        android:id="@+id/don_hist_purpose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="4"
+        android:minLines="1"
+        android:text="Purpose"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/don_hist_unit"
+        app:layout_constraintStart_toStartOf="@+id/don_hist_patient"
+        app:layout_constraintTop_toBottomOf="@+id/don_hist_patient" />
+
+    <TextView
+        android:id="@+id/don_hist_requested_by"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:text="Requested by"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/don_hist_completed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/don_hist_purpose" />
+
+    <Button
+        android:id="@+id/don_hist_report_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="REPORT"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="@+id/don_hist_purpose"
+        app:layout_constraintTop_toBottomOf="@+id/don_hist_completed" />
+
+    <TextView
+        android:id="@+id/don_hist_completed_on"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Donation comepleted on "
+        app:layout_constraintBottom_toBottomOf="@+id/don_hist_report_btn"
+        app:layout_constraintStart_toStartOf="@+id/don_hist_requested_by" />
+
+    <TextView
+        android:id="@+id/don_hist_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="COMPLETED"
+        android:textColor="#4CAF50"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/don_hist_purpose"
+        app:layout_constraintTop_toBottomOf="@+id/don_hist_purpose" />
+</androidx.constraintlayout.widget.ConstraintLayout>
